@@ -1,28 +1,30 @@
 import React from 'react'
+import { Navbar, NavItem, Nav, Button } from 'react-bootstrap'
 
-var myStyle = {
+var myStyle1 = {
+    marginLeft:  "-20px"
+}
+var myStyle2 = {
     color:  "#fff",
 }
-export default class Nav extends React.Component {
+export default class navInstance extends React.Component {
   render() {
     return (
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="" style={myStyle}>MENU</span>
-        </button>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#fruits">Fruits</a></li>
-        <li><a href="#veggies">Vegetables</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <Navbar inverse fixedTop>
+      <Navbar.Header>
+        <Button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span style={myStyle2}>MENU</span>
+        </Button>
+      </Navbar.Header>
+    <Navbar.Collapse id="myNavbar">
+      <Nav style={myStyle1}>
+        <NavItem eventKey={1} href="#home">Home</NavItem>
+        <NavItem eventKey={2} href="#fruits">Fruits</NavItem>
+        <NavItem eventKey={3} href="#veggies">Veggies</NavItem>
+        <NavItem eventKey={4} href="#contact">Contact</NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
 
 );}}
