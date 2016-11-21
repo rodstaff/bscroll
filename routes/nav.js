@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, NavItem, Nav, Button } from 'react-bootstrap'
+import { IndexLinkContainer } from 'react-router-bootstrap'
 
 var myStyle1 = {
     marginLeft:  "-20px"

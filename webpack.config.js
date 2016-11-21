@@ -10,7 +10,7 @@ module.exports = {
   devServer: {
     inline: true,   
     publicPath: '/',    
-    port: 8088
+    port: 8083
   },
   devtool: 'inline-source-map',
   module: {
